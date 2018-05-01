@@ -1,0 +1,173 @@
+/*-------Generalt--------*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+section {
+    max-width: ;
+    margin: ;
+
+
+}
+
+p {
+    font-family: ;
+    font-size: ;
+
+}
+
+knap {}
+
+/*-------Forside--------*/
+
+#forside {
+    position: relative;
+    width: 100vw;
+    height: 56vw;
+}
+
+#forside_pic {
+
+    background-image: url(billed-filer/bg.png);
+    position: absolute;
+    width: 100vw;
+    height: 56vw;
+    background-size: cover;
+}
+
+
+#storm_top {
+    background-image: url(svg-filer/stormblinker-01.svg);
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 30vw;
+    width: 30vw;
+    background-size: 200% 100%;
+    animation: stormblinker_kf 2s infinite both steps(2);
+
+}
+
+@keyframes stormblinker_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    70% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -100% 0%;
+    }
+}
+
+#knap_bottom {
+    background-image: url(svg-filer/knap_startside.svg);
+}
+
+
+/*-------Storms værelse--------*/
+
+#storms_vaerlse {
+    position: relative;
+    width: 100vw;
+    height: 56vw;
+}
+
+#storms_vaerlse_pic {
+    background-image: url(billed-filer/storms_room.png);
+    position: absolute;
+    width: 100vw;
+    height: 56vw;
+    background-size: cover;
+
+}
+
+#storm_container {
+    flex-basis: ;
+    flex-grow: ;
+    margin: ;
+    padding: ;
+}
+
+#textbesked_1 {
+
+    margin-left: ;
+    margin-right: ;
+    display: none;
+
+}
+
+#textbesked_2 {
+
+    margin-left: ;
+    margin-right: ;
+    display: none;
+
+}
+
+#textbesked_3 {
+
+    margin-left: ;
+    margin-right: ;
+    display: none;
+
+}
+
+#knap_1 {
+
+    margin-left: ;
+    margin-right: ;
+
+}
+
+#politimand_container {}
+
+#politimand_textbox {
+    margin-left: ;
+    margin-right: ;
+    display: none;
+}
+
+#knap_2 {
+
+    margin-left: ;
+    margin-right: ;
+
+}
+
+#thumbsup_container {}
+
+#thumbsup_textbox {
+    margin-left: ;
+    margin-right: ;
+    display: none;
+}
+
+
+/*-------End site--------*/
+
+#endsite {
+    background-image: image();
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#endsite_container {}
+
+#textbox_endbesked {
+
+    display: none;
+}
+
+#textbox_endlink {
+
+    text-decoration: none;
+}
