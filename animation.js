@@ -17,11 +17,12 @@ function showScene2() {
     $("#storm_beat")[0].play();
     $("#storm_beat")[0].volume = 0.5;
 
-    setTimeout(takeOutPhone, 2000);
+
+    setTimeout(takeOutPhone, 6000);
 }
 
 function takeOutPhone() {
-    console.log("test");
+    console.log("storm tager telefon frem");
     $("#storm_sprite_1").removeClass("sprite1");
     $("#storm_sprite_1").addClass("sprite2");
 

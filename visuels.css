@@ -81,11 +81,6 @@ knap {}
     animation: knap_aktiv_kf 2s infinite both steps(1);
 }
 
-/*
-.visScene {
-    display: block;
-}*/
-
 section {
     display: none;
 }
@@ -96,6 +91,7 @@ section {
     position: relative;
     width: 100vw;
     height: 56vw;
+    /*skjuler det der "flyder" ud over baggrunden*/
     overflow: hidden;
 }
 
@@ -109,19 +105,23 @@ section {
 
 }
 
+/*generelle indstillinger på CONTAINEREN der holder på storms spritesheet*/
+
 #storm_container {
     position: absolute;
-    /*hvor Storm er placeret på scenen    */
-    top: 75%;
+    /*hvor Storm er placeret på scenen */
+    top: 65%;
     left: 40%;
-    /*højde og vide på containeren der displayer Storm    */
+    /*højde og vide på containeren der displayer Storm */
     height: 7vw;
     width: 5vw;
-    /*gør at vores figur er scalerbar*/
-    transform: scale(7);
+    /*gør at vores figur er scalerbar */
+    transform: scale(8);
 
 
 }
+
+/*generelle indstillinger på SPRITESHEETET til storms animationer */
 
 #storm_sprite_1 {
     background-image: url(svg-filer/storm_sprite-01.svg);
@@ -129,14 +129,20 @@ section {
     height: 7vw;
     width: 5vw;
 
-    /* background-sizen sættes til 800% fordi spriten er en 8 takts spite(8 figuer bred)*/
+    /* background-sizen sættes til 800% fordi hele spriten er en 8 takts spite(8 figuer bred)*/
     background-size: 800%;
-
-
 
 }
 
-/*placering af de enkelte keyframes*/
+/*animationen af sprite1: storms første bevægelse når spillet starter, han blinker*/
+
+.sprite1 {
+    /*animation sættes til tidsinterval 2 sek og er en 2 steps amination, altså den køre mellem to billeder    */
+    animation: storm_sprite_1_kf 2s infinite both steps(2);
+}
+
+
+/*visning af de enkelte keyframes til sprite1*/
 
 @keyframes storm_sprite_1_kf {
     0% {
@@ -149,10 +155,7 @@ section {
     }
 }
 
-.sprite1 {
-    /*animation sættes til tidsinterval 2 sek og er en 2 steps amination, altså den køre mellem to billeder    */
-    animation: storm_sprite_1_kf 2s infinite both steps(2);
-}
+/*animationen af sprite2: storms anden bevægelse i spillet, storm tager sin telefon frem*/
 
 .sprite2 {
     background-position: 0% -100%;
@@ -160,6 +163,8 @@ section {
     animation: storm_sprite_2_kf 2s infinite steps(5);
 
 }
+
+/*visning af de enkelte keyframes til sprite2*/
 
 @keyframes storm_sprite_2_kf {
     0% {
