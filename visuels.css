@@ -79,6 +79,7 @@ knap {}
     position: relative;
     width: 100vw;
     height: 56vw;
+    overflow: hidden;
 }
 
 #storms_vaerlse_pic {
@@ -87,17 +88,55 @@ knap {}
     width: 100vw;
     height: 56vw;
     background-size: cover;
+    overflow: hidden;
 
 }
 
 #storm_container {
-    flex-basis: ;
-    flex-grow: ;
-    margin: ;
-    padding: ;
+    position: absolute;
+    /*hvor Storm er placeret på scenen    */
+    top: 75%;
+    left: 40%;
+    /*højde og vide på containeren der displayer Storm    */
+    height: 7vw;
+    width: 5vw;
+    /*gør at vores figur er scalerbar*/
+    transform: scale(7);
+
+
 }
 
-#storm_sprite {}
+#storm_sprite {
+    background-image: url(svg-filer/storm_sprite-01.svg);
+    position: absolute;
+    height: 7vw;
+    width: 5vw;
+
+    /* background-sizen sættes til 800% fordi spriten er en 8 takts spite(8 figuer bred)*/
+    background-size: 800%;
+
+    /*animation sættes til tidsinterval 2 sek og er en 2 steps amination, altså den køre mellem to billeder    */
+    animation: storm_sprite_kf 2s infinite both steps(2);
+
+
+
+
+}
+
+/*placering af de enkelte keyframes*/
+
+@keyframes storm_sprite_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+
+
+    100% {
+        background-position: -200% 0%;
+    }
+}
+
+
 
 #textbesked_1 {
 
