@@ -177,29 +177,89 @@ section {
     }
 }
 
-#textbesked_1 {
+#mobil {
+    width: 30vw;
+    height: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-    margin-left: ;
-    margin-right: ;
+
+}
+
+#mobil p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.text {
+    background-size: cover;
+}
+
+#text_1 {
+    background-image: url(billeder/Jonas.png);
+    z-index: 1;
+    width: 30vw;
+    height: 18vw;
+    background-size: cover;
     display: none;
 
 }
 
-#textbesked_2 {
+#text_1 p {
+    margin-top: 3vw;
+    margin-left: 6vw;
+    font-size: 1.1vw;
 
-    margin-left: ;
-    margin-right: ;
+}
+
+
+#text_2 {
+    background-image: url(billeder/simon.png);
+    z-index: 1;
+    width: 30vw;
+    height: 12vw;
+    background-size: cover;
+    display: none;
+}
+
+#text_2 p {
+    margin-top: 7.5vw;
+    margin-left: 7vw;
+    font-size: 1.6vw;
+
+}
+
+#text_3 {
+    background-image: url(billeder/victor.png);
+    z-index: 1;
+    width: 30vw;
+    height: 12vw;
+    background-size: cover;
     display: none;
 
 }
 
-#textbesked_3 {
-
-    margin-left: ;
-    margin-right: ;
-    display: none;
-
+#text_3 p {
+    margin-top: 7.4vw;
+    margin-left: 8vw;
+    font-size: 1.6vw;
 }
+
+#svar {
+    background-image: url(billeder/storm.png);
+    z-index: 1;
+    width: 30vw;
+    height: 12vw;
+    background-size: cover;
+    display: none;
+}
+
+#svar p {}
+
+.display {
+    display: block;
+}
+
 
 #knap_1 {
 
