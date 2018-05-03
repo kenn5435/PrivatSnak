@@ -196,7 +196,7 @@ section {
 }
 
 #text_1 {
-    background-image: url(billeder/Jonas.png);
+    background-image: url(billed-filer/jonas.png);
     z-index: 1;
     width: 30vw;
     height: 18vw;
@@ -214,7 +214,7 @@ section {
 
 
 #text_2 {
-    background-image: url(billeder/simon.png);
+    background-image: url(billed-filer/simon.png);
     z-index: 1;
     width: 30vw;
     height: 12vw;
@@ -230,7 +230,7 @@ section {
 }
 
 #text_3 {
-    background-image: url(billeder/victor.png);
+    background-image: url(billed-filer/victor.png);
     z-index: 1;
     width: 30vw;
     height: 12vw;
@@ -246,8 +246,7 @@ section {
 }
 
 #svar {
-    background-image: url(billeder/storm.png);
-    z-index: 1;
+    background-image: url(billed-filer/storm.png) z-index: 1;
     width: 30vw;
     height: 12vw;
     background-size: cover;
