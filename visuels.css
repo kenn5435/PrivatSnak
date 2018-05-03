@@ -13,7 +13,12 @@ body {
 
 section {}
 
-p {}
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    $ font-size: ;
+}
 
 knap {}
 
@@ -168,6 +173,7 @@ section {
     }
 }
 
+
 /*animationen af sprite2: storms anden bevægelse i spillet, storm tager sin telefon frem*/
 
 .sprite3 {
@@ -182,13 +188,69 @@ section {
 @keyframes storm_sprite_3_kf {
     0% {
         background-position: 0% -200%;
-    }
 
-
-    100% {
-        background-position: -100% -200%;
+        100% {
+            background-position: -100% -200%;
+        }
     }
 }
+
+/*generalle indstillinger for teksbeskeder*/
+
+#mobil {
+    z-index: 3;
+    width: 30vw;
+    height: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*her bliver beskederne lagt i en klumme (column) og når en ny besked kommer popper den nye besked op og gør plads til den */
+
+#mobil p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.text {
+    background-size: cover;
+}
+
+#text_1 {
+    background-image: url(billed-filer/jonas.png);
+    z-index: 3;
+    width: 30vw;
+    height: 18vw;
+    background-size: cover;
+    display: none;
+}
+
+#text_1 p {
+    margin-top: 3vw;
+    margin-left: 6vw;
+    font-size: 1.1vw;
+
+}
+
+
+#text_2 {
+    background-image: url(billed-filer/simon.png);
+    z-index: 3;
+    width: 30vw;
+    height: 12vw;
+    background-size: cover;
+    display: none;
+}
+
+#text_2 p {
+    margin-top: 7.5vw;
+    margin-left: 7vw;
+    font-size: 1.6vw;
+
+
+
+}
+
 
 .sprite4 {
 
@@ -208,15 +270,90 @@ section {
     100% {
         background-position: -300% -300%;
     }
+
 }
 
-#textbesked_1 {}
+#text_3 {
+    background-image: url(billed-filer/victor.png);
+    z-index: 1;
+    width: 30vw;
+    height: 12vw;
+    background-size: cover;
+    display: none;
 
-#textbesked_2 {}
+}
 
-#textbesked_3 {}
+#text_3 p {
+    margin-top: 7.4vw;
+    margin-left: 8vw;
+    font-size: 1.6vw;
+}
 
-#knap_1 {}
+#svar {
+    background-image: url(billed-filer/storm.png);
+    z-index: 1;
+    width: 30vw;
+    height: 12vw;
+    background-size: cover;
+    display: none;
+}
+
+/*på alle tekst bokse Har jeg placeret dem ved hjælp af width og height og også brugt den på p taggene*/
+
+.display {
+    display: block;
+}
+
+
+#knap_container {
+    /*    display: none;*/
+}
+
+#knap_1 {
+    background-image: url(svg-filer/valg_a.svg);
+    position: absolute;
+    height: 10.67vw;
+    width: 30vw;
+    top: 50%;
+    left: 15%;
+    background-size: 100%;
+    z-index: 5;
+    display: none;
+
+}
+
+#knap_2 {
+    background-image: url(svg-filer/valg_b.svg);
+    position: absolute;
+    height: 10.67vw;
+    width: 30vw;
+    top: 5%;
+    left: 150%;
+    background-size: 100%;
+    z-index: 5;
+/*    display: none;*/
+
+}
+
+#knap_textbox {
+    background-image: url(svg-filer/box.svg);
+    position: absolute;
+    background-size: 100%;
+    width: 30vw;
+    height: 13.5vw;
+    top: 15%;
+    left: 36%;
+    display: none;
+
+
+}
+
+#knap_textbox p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+
+}
 
 #politimand_container {}
 
