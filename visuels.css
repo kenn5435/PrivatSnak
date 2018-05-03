@@ -19,8 +19,8 @@ section {
 }
 
 p {
-    font-family: 'Nunito', sans-serif;$
-    font-size: ;
+    font-family: 'Nunito', sans-serif;
+    $ font-size: ;
 
 }
 
@@ -183,9 +183,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-
 }
+
+/*her bliver beskederne lagt i en klumme (column) og når en ny besked kommer popper den nye besked op og gør plads til den */
 
 #mobil p {
     font-family: 'Nunito', sans-serif;
@@ -254,7 +254,7 @@ section {
     display: none;
 }
 
-#svar p {}
+/*på alle tekst bokse Har jeg placeret dem ved hjælp af width og height og også brugt den på p taggene*/
 
 .display {
     display: block;
