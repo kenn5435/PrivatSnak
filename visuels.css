@@ -246,7 +246,8 @@ section {
 }
 
 #svar {
-    background-image: url(billed-filer/storm.png) z-index: 1;
+    background-image: url(billed-filer/storm.png);
+    z-index: 1;
     width: 30vw;
     height: 12vw;
     background-size: cover;
