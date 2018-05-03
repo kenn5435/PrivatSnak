@@ -18,7 +18,7 @@ function showScene2() {
     $("#storm_beat")[0].volume = 0.5;
 
 
-    setTimeout(takeOutPhone, 6000);
+    setTimeout(takeOutPhone, 4000);
 }
 
 function takeOutPhone() {
@@ -26,5 +26,20 @@ function takeOutPhone() {
     $("#storm_sprite_1").removeClass("sprite1");
     $("#storm_sprite_1").addClass("sprite2");
 
+    setTimeout(serBesked, 8000);
 
+}
+
+function serBesked() {
+    console.log("storm ser beskeder");
+    $("#storm_sprite_1").removeClass("sprite2");
+    $("#storm_sprite_1").addClass("sprite3");
+
+    setTimeout(surprised, 12000);
+}
+
+function surprised() {
+    console.log("storm blir forbavset");
+    $("#storm_sprite_1").removeClass("sprite3");
+    $("#storm_sprite_1").addClass("sprite4");
 }

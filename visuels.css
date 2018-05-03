@@ -11,18 +11,9 @@ body {
 
 }
 
-section {
-    max-width: ;
-    margin: ;
+section {}
 
-
-}
-
-p {
-    font-family: ;
-    font-size: ;
-
-}
+p {}
 
 knap {}
 
@@ -110,13 +101,13 @@ section {
 #storm_container {
     position: absolute;
     /*hvor Storm er placeret på scenen */
-    top: 65%;
+    top: 50%;
     left: 40%;
     /*højde og vide på containeren der displayer Storm */
-    height: 7vw;
-    width: 5vw;
+    height: 30vw;
+    width: 30vw;
     /*gør at vores figur er scalerbar */
-    transform: scale(8);
+    transform: scale(2);
 
 
 }
@@ -126,11 +117,11 @@ section {
 #storm_sprite_1 {
     background-image: url(svg-filer/storm_sprite-01.svg);
     position: absolute;
-    height: 7vw;
-    width: 5vw;
+    height: 30vw;
+    width: 30vw;
 
     /* background-sizen sættes til 800% fordi hele spriten er en 8 takts spite(8 figuer bred)*/
-    background-size: 800%;
+    background-size: 500% 400%;
 
 }
 
@@ -159,12 +150,12 @@ section {
 
 .sprite2 {
     background-position: 0% -100%;
-    /*animation sættes til tidsinterval 2 sek og er en 5 steps amination, altså den køre mellem to billeder    */
-    animation: storm_sprite_2_kf 2s infinite steps(5);
+    /*animation sættes til tidsinterval 2 sek og er en 4 steps amination, men den køre mellem 5 frames, første frame tælles ikke med da den ikke køre i loop */
+    animation: storm_sprite_2_kf 2s 1 both steps(4);
 
 }
 
-/*visning af de enkelte keyframes til sprite2*/
+/*positionering af de enkelte keyframes til sprite2*/
 
 @keyframes storm_sprite_2_kf {
     0% {
@@ -173,80 +164,77 @@ section {
 
 
     100% {
-        background-position: -500% -100%;
+        background-position: -400% -100%;
     }
 }
 
-#textbesked_1 {
+/*animationen af sprite2: storms anden bevægelse i spillet, storm tager sin telefon frem*/
 
-    margin-left: ;
-    margin-right: ;
-    display: none;
-
-}
-
-#textbesked_2 {
-
-    margin-left: ;
-    margin-right: ;
-    display: none;
+.sprite3 {
+    background-position: 0% -100%;
+    /*animation sættes til tidsinterval x sek og er en 1 steps amination, men den køre mellem 2 frames, første frame tælles ikke med da den ikke køre i loop */
+    animation: storm_sprite_3_kf 2s 1 both steps(1);
 
 }
 
-#textbesked_3 {
+/*positionering af de enkelte keyframes til sprite2*/
 
-    margin-left: ;
-    margin-right: ;
-    display: none;
+@keyframes storm_sprite_3_kf {
+    0% {
+        background-position: 0% -200%;
+    }
+
+
+    100% {
+        background-position: -100% -200%;
+    }
+}
+
+.sprite4 {
+
+    /*animation sættes til tidsinterval 2 sek og er en 4 steps amination, men den køre mellem 4 frames, første fraim tælles ikke med da den ikke køre i loop */
+    animation: storm_sprite_4_kf 2s 1 both steps(3);
 
 }
 
-#knap_1 {
+/*positionering af de enkelte keyframes til sprite4*/
 
-    margin-left: ;
-    margin-right: ;
+@keyframes storm_sprite_4_kf {
+    0% {
+        background-position: 0% -300%;
+    }
 
+
+    100% {
+        background-position: -300% -300%;
+    }
 }
+
+#textbesked_1 {}
+
+#textbesked_2 {}
+
+#textbesked_3 {}
+
+#knap_1 {}
 
 #politimand_container {}
 
-#politimand_textbox {
-    margin-left: ;
-    margin-right: ;
-    display: none;
-}
+#politimand_textbox {}
 
-#knap_2 {
-
-    margin-left: ;
-    margin-right: ;
-
-}
+#knap_2 {}
 
 #thumbsup_container {}
 
-#thumbsup_textbox {
-    margin-left: ;
-    margin-right: ;
-    display: none;
-}
+#thumbsup_textbox {}
 
 
 /*-------End site--------*/
 
-#endsite {
-    background-image: image();
-    display: flex;
-    flex-wrap: wrap;
-}
+#endsite {}
 
 #endsite_container {}
 
-#textbox_endbesked {
-    display: none;
-}
+#textbox_endbesked {}
 
-#textbox_endlink {
-
-    text-decoration: none;
-}
+#textbox_endlink {}
