@@ -21,6 +21,7 @@ function showScene2() {
 }
 
 
+
 function takeOutPhone() {
     console.log("storm tager telefon frem");
     $("#storm_sprite_1").removeClass("sprite1");
@@ -77,14 +78,14 @@ function storm_besked3() {
     text_3.style.display = "block";
     $("#besked_lyd_1")[0].play();
 
-    setTimeout(stormSvar, 12000);
+    setTimeout(stormSvar, 3000);
 }
 
 function stormSvar() {
     $("#besked_lyd_1")[0].pause();
-    knap_textbox.style.display = "block";
-    knap_1.style.display = "block";
-    knap_2.style.display = "block";
+    $("#knap_textbox").show();
+    $("#knap_1").show();
+    $("#knap_2").show();
     $("#knap_1").on("click", spillerMed);
     $("#knap_2").on("click", spillerIkkeMed);
 }
@@ -92,10 +93,42 @@ function stormSvar() {
 
 
 function spillerMed() {
+    console.log("Spil med");
+
+    $("#knap_textbox").hide();
+    $("#knap_1").hide();
+    $("#knap_2").hide();
+    $("#knap_1").off("click", spillerMed);
+    $("#knap_2").off("click", spillerIkkeMed);
+
+
+    $("#politimand_full_container").show();
+    setTimeout(privatSnak, 5000);
+
 
 
 }
 
 function spillerIkkeMed() {
+    console.log("Spil ikke med");
+
+    $("#knap_textbox").hide();
+    $("#knap_1").hide();
+    $("#knap_2").hide();
+    $("#knap_1").off("click", spillerMed);
+    $("#knap_2").off("click", spillerIkkeMed);
+
+
+    $("#thumbsup_full_container").show();
+    setTimeout(privatSnak, 5000);
+}
+
+
+
+function privatSnak() {
+    $("storm_beat")[0].pause();
+    $("#storms_vaerlse").hide();
+    $("#endsite").show();
+    $("#intro_beat")[0].play();
 
 }

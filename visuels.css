@@ -20,8 +20,6 @@ p {
     $ font-size: ;
 }
 
-knap {}
-
 /*-------Forside--------*/
 
 #forside {
@@ -331,7 +329,7 @@ section {
     left: 150%;
     background-size: 100%;
     z-index: 5;
-/*    display: none;*/
+    display: none;
 
 }
 
@@ -349,29 +347,186 @@ section {
 }
 
 #knap_textbox p {
-    text-align: center;
-    font-size: 20px;
+
+
+    font-size: 17px;
     font-family: 'Nunito', sans-serif;
 
 }
 
-#politimand_container {}
+/* Politimand Pop-up*/
 
-#politimand_textbox {}
+#politimand_full_container {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 50vw;
+    height: 22.5vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 
-#knap_2 {}
+#politimand_container {
+    position: absolute;
+}
 
-#thumbsup_container {}
+#politimand_textbox {
+    background-image: url(svg-filer/box.svg);
+    background-size: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 50vw;
+    height: 22.5vw;
+}
 
-#thumbsup_textbox {}
+#politimand_textbox p {
+    position: absolute;
+    z-index: 3;
+    font-size: 15px;
+    left: 15vw;
+    top: 2.vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#politimand_sprite {
+
+    background-image: url(svg-filer/politimand-01.svg);
+    position: absolute;
+    top: 0vw;
+    left: -4vw;
+    width: 20vw;
+    height: 20vw;
+    background-size: 200%;
+    z-index: 2;
+    animation-direction: reverse;
+    animation-name: poltimand_blink_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes poltimand_blink_kf {
+
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: -200% 0%;
+    }
+}
+
+
+/* Thumbs-UP popup*/
+
+#thumbsup_full_container {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+#thumbsup_container {
+    top: 80vw;
+    left: 10vw;
+    transform: scale(1.5);
+    height: 7.5vw;
+    width: 10vw;
+}
+
+#thumbsup_sprite {
+    background-image: url(svg-filer/thumb-01.svg);
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    background-size: 400%;
+    animation: thumbsup_sprite_kf 2s infinite steps(4);
+    animation-direction: reverse;
+    top: 2%;
+    left: 75%;
+
+}
+
+@keyframes thumbsup_sprite_kf {
+
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 400% 0%;
+    }
+
+}
+
+#thumbsup_textbox {
+    background-image: url(svg-filer/box.svg);
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 50vw;
+    height: 22.5vw;
+    background-size: 100%;
+}
+
+#thumbsup_textbox p {
+    position: absolute;
+    font-size: 18px;
+    left: 1vw;
+    top: 0.5vw;
+    font-family: 'Roboto', sans-serif;
+}
 
 
 /*-------End site--------*/
 
-#endsite {}
+#endsite {
+    display: none;
+    background-image: url(svg-filer/end_site1.ai-01.svg);
+    position: absolute;
+    width: 100vw;
+    height: 56vw;
+    background-size: cover;
+}
 
-#endsite_container {}
+#textbox_endbesked {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.4em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 20vw;
+    margin-top: 11vw;
+    text-shadow: 1px 1px #1B1F28;
+}
 
-#textbox_endbesked {}
+#textbox_endlink {
+    background-image: url(svg-filer/privat_snak-01.svg);
+    position: absolute;
+    height: 20vw;
+    width: 25vw;
+    bottom: 10vw;
+    left: 25vw;
+    background-size: 400%;
+    background-position: 0% -300%;
+    animation: puls_kf 0.5s infinite alternate linear;
+}
 
-#textbox_endlink {}
+#endsite_sprite {}
+
+@keyframes puls_kf {
+    0% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.8);
+    }
+
+}
