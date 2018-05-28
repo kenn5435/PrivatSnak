@@ -104,9 +104,6 @@ function spillerMed() {
 
     $("#politimand_full_container").show();
     setTimeout(privatSnak, 5000);
-
-
-
 }
 
 function spillerIkkeMed() {
@@ -123,9 +120,8 @@ function spillerIkkeMed() {
     setTimeout(privatSnak, 5000);
 }
 
-
-
 function privatSnak() {
+    console.log(slutsiden vises);
     $("storm_beat")[0].pause();
     $("#storms_vaerlse").hide();
     $("#endsite").show();
