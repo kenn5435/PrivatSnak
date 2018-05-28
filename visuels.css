@@ -11,13 +11,9 @@ body {
 
 }
 
-section {}
-
-}
-
 p {
     font-family: 'Nunito', sans-serif;
-    $ font-size: ;
+    font-size: ;
 }
 
 /*-------Forside--------*/
@@ -386,7 +382,7 @@ section {
     z-index: 3;
     font-size: 15px;
     left: 15vw;
-    top: 2.vw;
+    top: 2vw;
     font-family: 'Roboto', sans-serif;
 }
 

@@ -122,7 +122,7 @@ function spillerIkkeMed() {
 
 function privatSnak() {
     console.log(slutsiden vises);
-    $("storm_beat")[0].pause();
+    $("#storm_beat")[0].pause();
     $("#storms_vaerlse").hide();
     $("#endsite").show();
     $("#intro_beat")[0].play();
